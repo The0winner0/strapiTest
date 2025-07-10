@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "atoll_product_pages",
+  "info": {
+    "singularName": "atoll-product-page",
+    "pluralName": "atoll-product-pages",
+    "displayName": "AtollProductPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}

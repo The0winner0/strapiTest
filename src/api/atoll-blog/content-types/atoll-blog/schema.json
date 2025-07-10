@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atoll_blogs",
+  "info": {
+    "singularName": "atoll-blog",
+    "pluralName": "atoll-blogs",
+    "displayName": "AtollBlog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "published": {
+      "type": "datetime"
+    },
+    "category": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "featured": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    }
+  }
+}

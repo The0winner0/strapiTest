@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atoll_products",
+  "info": {
+    "singularName": "atoll-product",
+    "pluralName": "atoll-products",
+    "displayName": "AtollProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "AgTags",
+        "AuTags",
+        "Environmental Tags",
+        "General Tags",
+        "Other Tags"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "specs": {
+      "type": "json"
+    }
+  }
+}
