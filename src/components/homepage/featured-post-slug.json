@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_featured_post_slugs",
+  "info": {
+    "displayName": "Featured Post Slug"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

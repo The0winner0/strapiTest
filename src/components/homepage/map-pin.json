@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_map_pins",
+  "info": {
+    "displayName": "Map Pin"
+  },
+  "options": {},
+  "attributes": {
+    "topPosition": {
+      "type": "string"
+    },
+    "leftPosition": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

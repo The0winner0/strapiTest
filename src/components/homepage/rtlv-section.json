@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_rtlv_sections",
+  "info": {
+    "displayName": "RTLV Section"
+  },
+  "options": {},
+  "attributes": {
+    "kinesisTitle": {
+      "type": "string"
+    },
+    "kinesisDescription": {
+      "type": "text"
+    },
+    "rtlvTitle": {
+      "type": "text"
+    },
+    "rtlvFeatures": {
+      "type": "component",
+      "component": "homepage.rtlv-feature",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

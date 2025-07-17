@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_kinesis_highlights_grid_items",
+  "info": {
+    "displayName": "gridItems"
+  },
+  "options": {},
+  "attributes": {
+    "iconSvgPath": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_homepage_hero_sections",
+  "info": {
+    "displayName": "Hero Section"
+  },
+  "options": {},
+  "attributes": {
+    "heroTitleLine1": {
+      "type": "string"
+    },
+    "heroTitleGradient": {
+      "type": "string"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroButtonText": {
+      "type": "string"
+    },
+    "heroButtonLink": {
+      "type": "string"
+    },
+    "heroBackgroundImageDesktop": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroBackgroundImageMobile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroMapPins": {
+      "type": "component",
+      "component": "homepage.map-pin",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

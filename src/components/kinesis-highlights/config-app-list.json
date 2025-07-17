@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_kinesis_highlights_config_app_lists",
+  "info": {
+    "displayName": "configAppList"
+  },
+  "options": {},
+  "attributes": {
+    "itemText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

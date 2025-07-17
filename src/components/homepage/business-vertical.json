@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_homepage_business_verticals",
+  "info": {
+    "displayName": "Business Vertical"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "iconSvgPath": {
+      "type": "text"
+    },
+    "iconViewBox": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

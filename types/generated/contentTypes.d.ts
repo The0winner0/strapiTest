@@ -488,9 +488,7 @@ export interface ApiAtollProductAtollProduct
     draftAndPublish: true;
   };
   attributes: {
-    category: Schema.Attribute.Enumeration<
-      ['AgTags', 'AuTags', 'Environmental Tags', 'General Tags', 'Other Tags']
-    >;
+    category: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -542,6 +540,36 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
+  collectionName: 'contact_pages';
+  info: {
+    displayName: 'contact-page';
+    pluralName: 'contact-pages';
+    singularName: 'contact-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contactDetails: Schema.Attribute.Component<'contact.info-card', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroHeading: Schema.Attribute.String;
+    heroParagraph: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-page.contact-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGalleryImageGalleryImage
   extends Struct.CollectionTypeSchema {
   collectionName: 'gallery_images';
@@ -568,6 +596,97 @@ export interface ApiGalleryImageGalleryImage
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
+  collectionName: 'homepages';
+  info: {
+    displayName: 'Homepage';
+    pluralName: 'homepages';
+    singularName: 'homepage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredPostSlugs: Schema.Attribute.Component<
+      'homepage.featured-post-slug',
+      true
+    >;
+    heroSection: Schema.Attribute.Component<'homepage.hero-section', false>;
+    insightsSection: Schema.Attribute.Component<
+      'homepage.insights-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::homepage.homepage'
+    > &
+      Schema.Attribute.Private;
+    partnersSection: Schema.Attribute.Component<
+      'homepage.partners-section',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    rtlvSection: Schema.Attribute.Component<'homepage.rtlv-section', false>;
+    seoDescription: Schema.Attribute.Text;
+    seoTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    verticalsSection: Schema.Attribute.Component<
+      'homepage.verticals-section',
+      false
+    >;
+    videoSection: Schema.Attribute.Component<'homepage.video-section', false>;
+  };
+}
+
+export interface ApiPlatformPagePlatformPage extends Struct.SingleTypeSchema {
+  collectionName: 'platform_pages';
+  info: {
+    displayName: 'Platform Page';
+    pluralName: 'platform-pages';
+    singularName: 'platform-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    configurationAppFields: Schema.Attribute.Component<
+      'kinesis-highlights.configuration-app-fields',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroSubtitle: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::platform-page.platform-page'
+    > &
+      Schema.Attribute.Private;
+    pageContent: Schema.Attribute.DynamicZone<
+      [
+        'kinesis-highlights.list-section',
+        'kinesis-highlights.image-and-text-section',
+        'kinesis-highlights.svg-grid-section',
+      ]
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    seoDescription: Schema.Attribute.Text;
+    seoTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    videoUrl: Schema.Attribute.String;
   };
 }
 
@@ -1139,7 +1258,10 @@ declare module '@strapi/strapi' {
       'api::atoll-product-page.atoll-product-page': ApiAtollProductPageAtollProductPage;
       'api::atoll-product.atoll-product': ApiAtollProductAtollProduct;
       'api::author.author': ApiAuthorAuthor;
+      'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::gallery-image.gallery-image': ApiGalleryImageGalleryImage;
+      'api::homepage.homepage': ApiHomepageHomepage;
+      'api::platform-page.platform-page': ApiPlatformPagePlatformPage;
       'api::post.post': ApiPostPost;
       'api::try1.try1': ApiTry1Try1;
       'plugin::content-releases.release': PluginContentReleasesRelease;

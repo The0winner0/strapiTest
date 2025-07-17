@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_video_sections",
+  "info": {
+    "displayName": "Video Section"
+  },
+  "options": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "string"
+    },
+    "videoTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

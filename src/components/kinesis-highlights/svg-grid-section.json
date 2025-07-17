@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_kinesis_highlights_svg_grid_sections",
+  "info": {
+    "displayName": "SVG Grid Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "gridItems": {
+      "type": "component",
+      "component": "kinesis-highlights.grid-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

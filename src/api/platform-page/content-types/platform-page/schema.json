@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "platform_pages",
+  "info": {
+    "singularName": "platform-page",
+    "pluralName": "platform-pages",
+    "displayName": "Platform Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "text"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "pageContent": {
+      "type": "dynamiczone",
+      "components": [
+        "kinesis-highlights.list-section",
+        "kinesis-highlights.image-and-text-section",
+        "kinesis-highlights.svg-grid-section"
+      ]
+    },
+    "configurationAppFields": {
+      "type": "component",
+      "component": "kinesis-highlights.configuration-app-fields",
+      "repeatable": false
+    }
+  }
+}

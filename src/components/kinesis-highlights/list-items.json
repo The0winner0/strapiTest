@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_kinesis_highlights_list_items",
+  "info": {
+    "displayName": "listItems"
+  },
+  "options": {},
+  "attributes": {
+    "itemText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_homepage_partners_sections",
+  "info": {
+    "displayName": "Partners Section"
+  },
+  "options": {},
+  "attributes": {
+    "partnersTitle": {
+      "type": "text"
+    },
+    "partners": {
+      "type": "component",
+      "component": "homepage.partner",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

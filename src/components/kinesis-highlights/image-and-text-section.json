@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_kinesis_highlights_image_and_text_sections",
+  "info": {
+    "displayName": "Image and Text Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Right"
+      ]
+    }
+  },
+  "config": {}
+}

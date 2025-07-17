@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_kinesis_highlights_list_sections",
+  "info": {
+    "displayName": "List Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "listItems": {
+      "type": "component",
+      "component": "kinesis-highlights.list-items",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

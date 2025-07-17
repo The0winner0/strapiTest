@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_kinesis_highlights_configuration_app_fields",
+  "info": {
+    "displayName": "Configuration App Fields"
+  },
+  "options": {},
+  "attributes": {
+    "configAppTitle": {
+      "type": "string"
+    },
+    "configAppSubtitle": {
+      "type": "text"
+    },
+    "itemText": {
+      "type": "component",
+      "component": "kinesis-highlights.config-app-list",
+      "repeatable": true
+    },
+    "configAppGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

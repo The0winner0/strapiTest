@@ -15,16 +15,6 @@
       "type": "string",
       "required": true
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "AgTags",
-        "AuTags",
-        "Environmental Tags",
-        "General Tags",
-        "Other Tags"
-      ]
-    },
     "Image": {
       "type": "media",
       "multiple": false,
@@ -40,6 +30,9 @@
     },
     "specs": {
       "type": "json"
+    },
+    "category": {
+      "type": "string"
     }
   }
 }

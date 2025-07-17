@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_homepage_rtlv_features",
+  "info": {
+    "displayName": "RTLV Feature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

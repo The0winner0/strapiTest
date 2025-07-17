@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_contact_info_cards",
+  "info": {
+    "displayName": "InfoCard"
+  },
+  "options": {},
+  "attributes": {
+    "iconSvg": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "animationClass": {
+      "type": "enumeration",
+      "enum": [
+        "fade-in-animate",
+        "fade-in-left-animate",
+        "fade-in-right-animate",
+        "fade-in-up-animate",
+        "fade-in-down-animate",
+        "zoom-in-animate"
+      ]
+    },
+    "delay": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
